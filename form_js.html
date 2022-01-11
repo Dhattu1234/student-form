@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function readvalues()
+{
+	  stu_name=form_reg.name.value;
+	  stu_password=document.form_reg.pwd.value;
+	  if(stu_name==""||stu_name==null)
+	  {
+		alert("please enter name");
+	  }
+	  else if(stu_password==""||stu_password==null)
+	  {
+		alert("please enter password");
+	  }
+	  else if(stu_password.length<8)
+	  {
+		alert("enter more than 8 digits");
+		}
+		else
+	  {
+		document.writeln("welcome<br>");
+		document.writeln(stu_name+"<br>");
+		document.writeln("hii<br>");
+		document.writeln(stu_password);
+	  }
+	  
+	  //document.writeln("Hello "+stu_name+"<br>");
+	  //document.writeln(stu_password);
+}
+</script>
+</head>
+<body>
+<form name="form_reg" action="severaddress">
+Name:<input type="text" name="name" value="cse"><br>
+Password:<input type="password" name="pwd" value="123456789"><br>
+<input type="button" value="submit" onclick="readvalues()">
+</form>
+</body>
+</html>
